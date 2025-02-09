@@ -1,1 +1,66 @@
-hello world - name 
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>CSS BOX ORI 2</title>
+
+    </head>
+    <style>
+        body {
+            margin: 0%;
+            border: 3px black solid;
+        }
+        h1 {
+            border-bottom: 2px black solid;
+            margin: 0%;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        #grid ol { /* ol태그 중에 부모가 grid 인 것들을 가르킴 */
+            border-right: 2px black solid;
+            width:70px;
+            margin: 0%;
+            padding: 34px;
+            font-size: 20px;
+            font-weight:bold;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        
+
+
+    </style>
+    <body>
+        <h1>CSS BOX MODEL</h1>
+        <div id="grid">
+            <ol>
+                <li>css </li>
+                <li>box </li>
+                <li>model </li>
+            </ol>
+            <div>
+                <h2>CSS MODEL</h2>
+                <p>
+                    In CSS, the term "box model" is used when talking about
+                    design and layout. <br>
+                    The CSS box model is essentially a box that wraps around 
+                    every HTML element. <br>
+                    It consists of: content, padding, borders and margins. 
+                    The image below illustrates the box model
+                </p>
+
+            </div>
+        </div>
+
+        
+
+    </body>
+</html>
+
+<!-- 전체적으로 어떤 흐름을 가지는지 그리고 어떤 느낌으로 구성되고 무엇이 필요충분조건인지 등등을 기억하라 
+ 어떤식의 느낌으로 이들이 움직이는지 형태를 파악하는 것이 매우 중요하다. -->
+
+ <!-- 반응형 웹 디자인에 대해서 
+  반응형 웹 디자인이란 우리가 일반적으로 웹 페이지가 축소하거나 확대될때 그에 맞춰서 디자인을 맞춰주는 것? 인것 같음. -->
