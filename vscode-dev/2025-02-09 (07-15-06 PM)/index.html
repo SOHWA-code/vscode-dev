@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GRID? </title>
+    </head>
+    <style>
+        #grid {
+            border: 3px pink solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 1fr은 나머지를 다 쓴다는 이야기임 
+            즉 두가지의 값들에 대해서 각각 1fr 1fr이면 전체(즉 블럭)에서 정확히 반반 나눠 쓴다는 이야기가 되고 
+            만약에 2fr 1fr이면 전체의 3등분에서 각 2등분 1등분을 가진다는 이야기가 됨 
+            이쯤되면 이해가 되지만 처음에 나머지를 다 쓴다는 이야기는 px로 지정할 수도 있는데 하나의 요소가 지정되었다면 
+            나머지 한값을 1fr이라고 지정했을때 해당 px만큼도 지정되고 나머지 부분이 전체다 채워진다는 것임 */
+        }
+        div {
+            border: 3px black solid;
+        }
+
+    </style>
+    <body>
+        <!--
+        <div>디자인적 요소를 위한 무색 무취의 태그 - 딱히 의미 없음</div>
+        <span>디자인적 요소를 위한 무색 무취의 태그 - 딱히 의미 없음</span>
+        div는 block 
+        span은 inline
+        --> 
+        <div id="grid"> <!-- 이렇게 부모자식 코드로 감싸는 이유는 이렇게 해야 칼럼을 나눌 수 있어서 라고 함 
+            가볍게 생각해봐도 만약 하나로 묶이지 않으면 개별요소를 다룰 수 없을 것 같음 그렇지 않겠니? --> 
+            <div>navigation</div>
+            <div>article</div>
+        </div>
+    </body>
+</html>
+<!-- 만약 이렇게 새로운 기술들이 생겨날때 사용할까? 도움이 될까의 여부가 궁금하다면 caniuse의 사이트에서 
+ 해당 기술의 유용성에 대해서 평가를 해놓았으니 참고하는게 중요할듯? -->
