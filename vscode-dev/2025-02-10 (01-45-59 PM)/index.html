@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>CSS BOX ORI 2</title>
+        <!--<link rel="stylesheet" href=""> ""안에 css파일을 넣으면 약간 헤더파일처럼 불러오는 느낌으로 사용할 수 있음 
+        그러면 미리 css의 중복되는 코드를 사용한 파일을 하나 생성하고 link만 한다면 여러파일에 동일한 css를 적용할 수 있는 혁신적인 태그를 
+        쓰게 되는 것임. -->
 
     </head>
     <style> 
@@ -36,6 +39,16 @@
             display: grid;
             grid-template-columns: 150px 1fr;
         }
+    @media(max-width:800px){
+        /* ()안의 내용은 조건 같은건가? 저 상황일때 {}안의 내용을 실핼하는 거니까.  */
+        #grid {
+
+            display: block;
+
+        }
+
+
+    }
         
 
 
